@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<link>
-<meta charset="UTF-8">
-<title>Title</title>
-<link rel="stylesheet" href="style.css"/>
-
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
@@ -25,7 +24,7 @@
 
     <div class="sliderNavigation">
 
-        <progress class="sliderNavigation__progressLine"></progress>
+        <progress class="sliderNavigation__progressLine" value="50" max="100" id = "progress"></progress>
         <div class="sliderNavigation__buttons">
             <button class="sliderNavigation__buttons_left">
                 <
@@ -40,31 +39,31 @@
 
     <!--HOUSES-->
 
-    <div class="houses">
+    <div class="houses" id = "houses">
         <!-- 1 house   -->
-        <div class="house">
-            <img src='images/house1'/>
+        <div class="house" id="house1">
+            <img class="house_image" src='images/house1.jpg'/>
             <p class="house__title">Large 4-room apartment with a beautiful terrace</p>
             <p class="house__price">320 000€</p>
             <p class="house__location">Barcelona IX</p>
         </div>
         <!-- 2 house   -->
         <div class="house">
-            <img src='images/house2'/>
+            <img class="house_image" src='images/house2.jpg'/>
             <p class="house__title">5i large design apartment with terrace</p>
             <p class="house__price">350 000€</p>
             <p class="house__location">Madrid II</p>
         </div>
         <!-- 3 house   -->
         <div class="house">
-            <img src='images/house3'/>
-            <p class="house__title">Magnificent duplex in a private villa</p>
+            <img class="house_image" src='images/house3.jpg'/>
+            <p class="house__title">Magnificent duplex in a private villa</p>
             <p class="house__price">280 000€</p>
             <p class="house__location">Barcelona IV</p>
         </div>
         <!-- 4 house   -->
         <div class="house">
-            <img src='images/house4'/>
+            <img class="house_image" src='images/house4.jpg'/>
             <p class="house__title">3-room apartment with a beautiful terrace</p>
             <p class="house__price">380 000€</p>
             <p class="house__location">Madrid II</p>
@@ -77,3 +76,6 @@
 
 </body>
 </html>
+
+<!--           -->
+
