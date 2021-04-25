@@ -1,0 +1,84 @@
+.canvas {
+    margin-left: 160px;
+    margin-top: 128px;
+}
+
+.houseGalleryHeader {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.houseGalleryHeader__Title {
+    font-size: 3.5rem;
+}
+
+.houseGalleryHeader__Description {
+    font-size: 1.375rem;
+}
+
+.sliderNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 48rem;
+    height: 5rem;
+    margin-top: 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+
+}
+
+.sliderNavigation__progressLine{
+    align-self: center;
+    width: 40rem;
+    height: 0.2rem;
+    color: #D8D8EB;
+    border-color: #D8D8EB;
+}
+
+.sliderNavigation__buttons {
+    display: flex;
+    align-self: center;
+    margin-right: 1rem;
+
+
+}
+
+.sliderNavigation__buttons_left {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+    color: white;
+    background-color: #1C4088;
+    border-radius: 10px;
+    border-color: #1C4088;
+    font-size: 2rem;
+}
+
+.sliderNavigation__buttons_right {
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    background-color: #1C4088;
+    border-radius: 10px;
+    border-color: #1C4088;
+    font-size: 2rem;
+}
+
+/* HOUSES */
+
+.houses {
+    display:  flex;
+    margin-top: 1rem;
+}
+
+.house {
+  width: 10rem;
+  margin-right: 1rem;
+}
+
+.house__title {
+    word-wrap: break-word;
+}
