@@ -1,0 +1,35 @@
+input{ display:none; }
+label{ padding:.2em .5em; }
+label:hover{ background:#ccc; cursor:pointer; }
+input:checked + label{ font-weight:bold; background:#ccc; }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    background: #9ba5b3; width: 315px;     height: 300px;     margin: 20px 0;  padding: 5px;
+}
+
+.flex-itm {     background: #2e5b61;    font-size: 2.5rem;     color: #eee;     margin: 5px;     padding: 15px; }
+.flex-itm:nth-child(3n) {   padding: 5px 15px; }
+.flex-itm:nth-child(3n+1) { padding: 20px 15px; }
+.flex-itm:nth-child(3n+2) { padding: 30px 15px; }
+
+#flex-start:checked ~ .flex {  align-items: flex-start; }
+#flex-end:checked ~ .flex   {  align-items: flex-end;   }
+#center:checked ~ .flex     {  align-items: center;     }
+#baseline:checked ~ .flex   {  align-items: baseline;   }
+#stretch:checked ~ .flex    {  align-items: stretch;    }
+
+#flex-start1:checked ~ .flex    {   align-content: flex-start; }
+#flex-end1:checked ~ .flex      {   align-content: flex-end;   }
+#center1:checked ~ .flex        {   align-content: center;     }
+#space-between1:checked ~ .flex {   align-content: space-between; }
+#space-evenly1:checked ~ .flex  {   align-content: space-evenly;  }
+#space-around1:checked ~ .flex  {   align-content: space-around;  }
+#stretch1:checked ~ .flex       {   align-content: stretch;       }
+
+
+
+
+
