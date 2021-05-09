@@ -1,0 +1,20 @@
+input{ display:none; }
+label{ padding:.2em .5em; }
+label:hover{ background:#ccc; cursor:pointer; }
+input:checked + label{ font-weight:bold; background:#ccc; }
+
+.flexContainer {
+    display: flex;
+}
+
+.item {
+    background-color: #cccccc;
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 3rem;
+}
+
+#row:checked ~ .flexContainer {flex-direction: row}
+#row-reverse:checked ~ .flexContainer {flex-direction: row-reverse}
+#column:checked ~ .flexContainer {flex-direction: column}
+#column-reverse:checked ~ .flexContainer {flex-direction: column-reverse}
