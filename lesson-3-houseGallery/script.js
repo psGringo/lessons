@@ -3,17 +3,21 @@ function changeHousesLeftMargin(marginOffset) {
     marginLeft += marginOffset;
     document.getElementById('house1').style.marginLeft = marginLeft.toString() + 'px';
     const progressValue = Math.random() * 100;
-    document.getElementById('progress').setAttribute('value', progressValue.toString());
+    document.getElementById('progressBar').setAttribute('value', progressValue.toString());
 }
 
-const houseWidth = document.getElementById('house1').clientWidth;
+const houseWidth = document.getElementById('house1').clientWidth / 2;
 
-const buttonRight = document.getElementsByClassName('sliderNavigation__buttons_right')[0];
+const buttonRight = document.getElementsByClassName('navigationButtons-left')[0];
 buttonRight.addEventListener('click', () => {
     changeHousesLeftMargin(houseWidth);
 });
 
-const buttonLeft = document.getElementsByClassName('sliderNavigation__buttons_left')[0];
+const buttonLeft = document.getElementsByClassName('navigationButtons-right')[0];
 buttonLeft.addEventListener('click', () => {
     changeHousesLeftMargin(-houseWidth);
 });
+
+function IsLeftButtonEnabled(){
+
+}

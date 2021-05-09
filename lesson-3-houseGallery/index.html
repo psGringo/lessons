@@ -7,38 +7,19 @@
 </head>
 <body>
 
-<div class="canvas">
-
-    <div class="houseGalleryHeader">
-        <div class="houseGalleryHeader__Title">
-            Наши объекты
-        </div>
-
-        <div class="houseGalleryHeader__Description">
-            На данной странице вы можете ознакомиться со всеми объектами
-            недвижимости нашей компании
+<div class="gallery">
+    <!--    Title and Description-->
+    <div class="gallery-title">Наши обьекты</div>
+    <div class = "gallery-description">На данной странице вы можете ознакомиться со всеми объектами недвижимости нашей компании</div>
+    <!-- Navigation   -->
+    <div class="gallery-navigation">
+        <progress class="progressBar" value="50" max="100" id = "progressBar"></progress>
+        <div class="navigationButtons">
+            <button class="navigationButtons-left"> < </button>
+            <button class="navigationButtons-right"> > </button>
         </div>
     </div>
-
-    <!-- SLIDER WITH CONTROLS -->
-
-    <div class="sliderNavigation">
-
-        <progress class="sliderNavigation__progressLine" value="50" max="100" id = "progress"></progress>
-        <div class="sliderNavigation__buttons">
-            <button class="sliderNavigation__buttons_left">
-                <
-            </button>
-
-            <button class="sliderNavigation__buttons_right">
-                >
-            </button>
-        </div>
-
-    </div>
-
-    <!--HOUSES-->
-
+    <!--    Houses-->
     <div class="houses" id = "houses">
         <!-- 1 house   -->
         <div class="house" id="house1">
