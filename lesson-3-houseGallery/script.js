@@ -3,45 +3,53 @@ const lastHouse = document.getElementById('house4');
 const progressBar = document.getElementById('progressBar');
 const progressLeftBorder = progressBar.getBoundingClientRect().left;
 const progressRightBorder = progressBar.getBoundingClientRect().right;
+const buttonLeft = document.getElementsByClassName('navigationButtons-left')[0];
+const buttonRight = document.getElementsByClassName('navigationButtons-right')[0];
 
-function getHousesRightBorder(){
+function getHousesRightBorder() {
     return lastHouse.getBoundingClientRect().right;
 }
 
-function getHousesLeftBorder(){
+function getHousesLeftBorder() {
     return firstHouse.getBoundingClientRect().left
 }
 
-const total = getHousesRightBorder() - progressRightBorder;
+let totalHousesWidth = getHousesRightBorder() - progressRightBorder;
+disableNavButtonsIfNeeded(0);
 
 function changeHousesLeftMargin(marginOffset) {
     let marginLeft = parseInt(document.getElementById('house1').style.marginLeft, 10) || 0;
     marginLeft += marginOffset;
 
-    if ((marginOffset > 0) && (getHousesLeftBorder() >= progressLeftBorder))
+    if ((marginOffset > 0) && (getHousesLeftBorder() >= progressLeftBorder) || (marginOffset < 0) && (getHousesRightBorder() <= progressRightBorder))
         return;
-
-    if ((marginOffset < 0) && (getHousesRightBorder() <= progressRightBorder))
-        return;
-
 
     // -- shift
     firstHouse.style.marginLeft = marginLeft.toString() + 'px';
-    const currentProgress = (1 - ((getHousesRightBorder() - progressRightBorder) / total)) * 100;
+    const currentProgress = (1 - ((getHousesRightBorder() - progressRightBorder) / totalHousesWidth)) * 100;
+    disableNavButtonsIfNeeded(currentProgress);
     document.getElementById('progressBar').setAttribute('value', currentProgress.toString());
 }
 
-const houseWidth = document.getElementById('house1').clientWidth / 2;
+function disableNavButtonsIfNeeded(currentProgress) {
+    if (currentProgress == 0) {
+        buttonLeft.setAttribute("style", "background-color: antiquewhite;");
+    } else
+        buttonLeft.setAttribute("style", "background-color: #1C4088;");
 
-const buttonRight = document.getElementsByClassName('navigationButtons-right')[0];
+    if (currentProgress >= 100) {
+        buttonRight.setAttribute("style", "background-color: antiquewhite;");
+    } else
+        buttonRight.setAttribute("style", "background-color: #1C4088;");
+}
+
+const shiftWidth = document.getElementById('house1').clientWidth / 2;
+
 buttonRight.addEventListener('click', () => {
-    changeHousesLeftMargin(-houseWidth);
-    // disable on the border
+    changeHousesLeftMargin(-shiftWidth);
 });
 
-const buttonLeft = document.getElementsByClassName('navigationButtons-left')[0];
 buttonLeft.addEventListener('click', () => {
-    changeHousesLeftMargin(houseWidth);
-    // disable on the border
+    changeHousesLeftMargin(shiftWidth);
 });
 
