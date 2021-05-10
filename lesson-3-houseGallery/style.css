@@ -63,15 +63,10 @@ body {
 }
 
 .house {
-    width: 352px;
-    height: 420px;
-}
-
-.house {
     width: 22rem;
     height: 26rem;
     margin-top: 0.5rem;
-    margin-left: 0.5rem;
+    margin-left: 0rem;
     margin-right: 1rem;
 
     background: white; /* Цвет фона */
