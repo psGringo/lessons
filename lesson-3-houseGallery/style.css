@@ -16,7 +16,7 @@ body {
     width: 70%;
 }
 
-.gallery-navigation {
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,12 +24,12 @@ body {
     margin-right: 2rem;
 }
 
-.progressBar {
+.progress {
     flex-grow: 1;
     margin-right: 1rem;
 }
 
-.navigationButtons-left {
+.buttons__left {
     height: 64px;
     width: 64px;
     border-radius: 16px;
@@ -38,11 +38,11 @@ body {
     color: #ffffff;
 }
 
-.navigationButtons-left:hover {
+.buttons__left:hover {
     cursor: pointer;
 }
 
-.navigationButtons-right {
+.buttons__right {
     height: 64px;
     width: 64px;
     border-radius: 16px;
@@ -51,7 +51,7 @@ body {
     color: #ffffff;
 }
 
-.navigationButtons-right:hover {
+.buttons__right:hover {
     cursor: pointer;
 }
 
