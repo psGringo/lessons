@@ -1,0 +1,38 @@
+.houses {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    overflow: hidden;
+}
+
+.house {
+    width: 22rem;
+    height: 26rem;
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+    margin-right: 1rem;
+
+    background: white; /* Цвет фона */
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 5px;
+}
+
+.house_image {
+    width: 22rem;
+    height: 16rem;
+    object-fit: cover;
+}
+
+.house__title {
+    word-wrap: break-word;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.house__price{
+    font-weight: 700;
+}
+
+.house__location{
+    font-weight: 400;
+}
