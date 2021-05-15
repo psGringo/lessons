@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10dbff32-20d4-4b1c-bc8d-8fe7e7b9728d" name="Default Changelist" comment="" />
+    <list default="true" id="10dbff32-20d4-4b1c-bc8d-8fe7e7b9728d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson3_house_gallery_react/src/components/GalleryTitle/GalleryTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3_house_gallery_react/src/components/GalleryTitle/GalleryTitle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson3_house_gallery_react/src/components/GalleryTitle/GalleryTitle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3_house_gallery_react/src/components/GalleryTitle/GalleryTitle.module.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +48,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../courserawebdevelopmentwithreact" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -93,6 +97,8 @@
       <updated>1619363674702</updated>
       <workItem from="1619363675737" duration="31754000" />
       <workItem from="1620671576866" duration="1013000" />
+      <workItem from="1620918657338" duration="906000" />
+      <workItem from="1621001702593" duration="3390000" />
     </task>
     <task id="LOCAL-00001" summary="flex">
       <created>1620563992655</created>
@@ -132,10 +138,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="551" height="438" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1620670280993" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1620918128950">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1620919626830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1620918128950" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1620919626830" />
     <state width="1259" height="220" key="GridCell.Tab.0.bottom" timestamp="1620671489040">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -200,10 +206,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1259" height="220" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1620671489041" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1620667570877">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1621012783331">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1620667570877" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1621012783331" />
     <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1620670433141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
