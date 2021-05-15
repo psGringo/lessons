@@ -1,0 +1,6 @@
+.houses {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    overflow: hidden;
+}
